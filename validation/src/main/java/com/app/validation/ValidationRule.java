@@ -2,6 +2,7 @@ package com.app.validation;
 
 import android.view.View;
 import android.widget.EditText;
+import android.widget.TextView;
 
 public class ValidationRule {
 
@@ -44,7 +45,16 @@ public class ValidationRule {
         }
 
         return 2;
+    }
 
+    public int checkEmptyStringTextView(View view)
+    {
+        TextView editText = (TextView) view;
+        if (editText.length() == 0) {
+            return 0;
+        }
+
+        return 2;
     }
 
 
