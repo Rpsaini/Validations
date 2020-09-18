@@ -15,7 +15,6 @@ public class MainActivity extends AppCompatActivity {
 
         ValidationRuleTest validationRule=new ValidationRuleTest();
 
-
         EditText edpassword =findViewById(R.id.edpassword);
 
         edpassword.setText("");

@@ -69,7 +69,7 @@ public class ValidationRule {
         if(checkEmptyString(pass1)==2)
         {
 
-            if(edPass1.getText().length()==edPass2.getText().length())
+            if(edPass1.getText().toString().equals(edPass2.getText().toString()))
             {
                 return 2;//valid Password
             }
